@@ -1,572 +1,65 @@
-local af_menu = menu.add_submenu("AF Money")
-
- local function Text(text)
-	af_menu:add_action(text, function() end)
-end
-Text("--------------------------------------------")
-Text("Action Figure Money")
-Text("--")
-local if_menu = af_menu:add_submenu("Infos")
- local function Text2(text)
-	if_menu:add_action(text, function() end)
-end
-Text2("- âš ï¸ = Do it on ur own Risk")
-Text2("- It is risky to collect all at ones")
-Text2("- To stop the Auto Collect Quit the Menu")
-Text2("- Tested in Solo Public")
-Text2("- Max$. 20Mil")
-Text2("- MaxRP. 5Mil")
-Text("--")
-af_menu:add_int_range("AF Money", 10000, 10000, 200000, function() 
-	return globals.get_int(288932)
-end, function(value)
-	globals.set_int(288932, value)
-end)
-af_menu:add_int_range("AF RP", 10000, 10000, 50000, function() 
-	return globals.get_int(288933)
-end, function(value)
-	globals.set_int(288933, value)
-end)
-af_menu:add_action("âš ï¸Auto Collect", function() 
-	
-	menu.send_key_press(96) -- OUT
-	sleep(1)
-	menu.send_key_press(96) 
-	sleep(1)
-	menu.send_key_press(104)
-	sleep(0.30)
-	menu.send_key_press(104)
-	sleep(0.30)
-	menu.send_key_press(104)
-	sleep(0.30)
-	menu.send_key_press(104)
-	sleep(0.30)
-	menu.send_key_press(104)
-	sleep(0.30)
-	menu.send_key_press(104)
-	sleep(0.30)
-	menu.send_key_press(104)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(101) -- 1st-Teleport ALien
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(96) -- OUT
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(101) -- 1st-Teleport Rage
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101)
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(96) -- OUT
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(101) -- 1st Teleport pogo
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)	
-	menu.send_key_press(96) -- OUT
-	menu.send_key_press(98)
-	sleep(0.30)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(101) -- 1st Teleport Princess
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(96) -- OUT
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(101) -- 1st Teleport RSPR H
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(96) -- OUT
-	sleep(0.30)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(101) -- 1st Teleport RSPR 
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.suicide_player()
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(96) -- OUT
-	sleep(1)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(10)
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	menu.send_key_press(98)
-	sleep(1)
-	menu.send_key_press(101) -- IN
-	sleep(1)
-	menu.send_key_press(96) -- OUT
-	sleep(1)
-	menu.send_key_press(96) -- OUT
-	sleep(1)
-	menu.send_key_press(96) -- OUT
-
-end)
-
-Text("--")
-Text("âž«ÎžÎ›ZÐ¢ÎžÎ›#3171/SLON")
-Text("--------------------------------------------")
+// This mod menu made for GTA5 Latest version
+// Author: Hirako Shiniji
+// Platform: Unknowncheats
+ 
+#include "pch.h"
+#include <Windows.h>
+#include <string>
+ 
+using namespace std;
+ 
+//real name
+#define Window "GTA5"
+ 
+//Addresses that we use to execute functions.
+#define PlayerCashOffset 0x1C72DEA
+#define WantedHUD 0x195357
+ 
+HMODULE WindowD = GetModuleHandle(NULL); // NULL == GTA5
+ 
+void ReleaseFunction(long mm) {
+    VirtualProtectEx(GetCurrentProcess(), WindowD + mm, 10, PAGE_EXECUTE_WRITECOPY, 0); //to set address rights to full
+}
+HANDLE CashHandle;
+string Data1 = "";
+void GetCashEx(char* output) {
+    ULONG read = 0;
+    int index = 0;
+    do {
+        ReadFile(CashHandle, output + index++, 1, &read, NULL);
+    } while (read > 0 && *(output + index - 1) != 0);
+}
+ 
+int AddCash(INT16 count) {
+    memset(WindowD + PlayerCashOffset, count, 20); // this is going to add cash to bank (maybe visual)
+    return count;
+}
+ 
+DWORD WINAPI Base(LPVOID mz1) {
+    while (!GetAsyncKeyState(VK_END))
+    {
+        if (GetAsyncKeyState(VK_F5)) {
+            AddCash(15); // 15 means 200k
+        }
+    }
+    return 0;
+}
+BOOL APIENTRY DllMain( HMODULE hModule,
+                       DWORD  ul_reason_for_call,
+                       LPVOID lpReserved
+                     )
+{
+    switch (ul_reason_for_call)
+    {
+    case DLL_PROCESS_ATTACH:
+        ReleaseFunction(PlayerCashOffset);
+        ReleaseFunction(WantedHUD);
+        CreateThread(0, 0, Base, 0, 0, 0);
+ 
+    case DLL_THREAD_ATTACH:
+    case DLL_THREAD_DETACH:
+    case DLL_PROCESS_DETACH:
+        break;
+    }
+    return TRUE;
+}
